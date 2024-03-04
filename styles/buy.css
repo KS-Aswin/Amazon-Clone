@@ -1,0 +1,404 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "Amazon Ember", Arial, sans-serif;
+	font-size:14px;
+	color:#0f1111;
+}
+
+.mainBody{
+	display:flex;
+	flex-direction:column;
+	padding:15px;
+}
+
+.navbar{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	padding:10px;
+	border-bottom:1px solid #D5D9D9;
+	
+}
+.navbar:nth-child(1){
+	padding-left:106px;
+}
+.navbar h1{
+	font-size:28px;
+	color:#0f1111;
+	margin-left:29.5%;
+	margin-right:33%;
+}
+.lockIcon{
+	width:26px;
+	height:26px;
+	cursor:pointer;
+}
+.contentBody{
+	display:flex;
+	margin:0px 81.5px;
+	padding:15px;
+}
+
+
+.contentLeft{
+	display:flex;
+	flex-direction:column;
+}
+
+.selectDeliveryAddress{
+	border-bottom:1px solid #D5D9D9;
+	padding-bottom:20px;
+	display:flex;
+	flex-direction:column;
+}
+
+.selectDeliveryAddress h3{
+	color:#c45500;
+	font-size:18px;
+	margin-bottom:10px;
+}
+.yourAddress{
+	display:flex;
+	flex-direction:column;
+	border-top:1px solid #d5d9d9;
+	border-left:1px solid #d5d9d9;
+	border-right:1px solid #d5d9d9;
+    	border-top-left-radius: 8px;
+    	border-top-right-radius: 8px;
+	gap:5px;
+	padding:18px;
+	margin-left:40px;
+}
+
+.yourAddressContents{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:10px 0px;
+	border-bottom:1px solid #d5d9d9;
+}
+
+.yourAddressContents b{
+	font-size:18px;
+	color:#0f1111;
+}
+.yourAddressContents a{
+	text-decoration:none;
+	color:#007185;
+	font-weight:700;
+}
+.yourAddressContents a:hover{
+	text-decoration: underline;
+    	color: #c45500;
+}
+
+.selectAddress{
+	
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:flex-start;
+	background-color: #FCF5EE;
+   	border: 1px solid #FBD8B4;
+	padding:15px;
+	margin:10px 0px;;
+	gap:5px;
+	border-radius:5px;
+	
+}
+
+.selectAddress a{
+	text-decoration:none;
+	color:#007185;
+}
+.selectAddress a:hover{
+	text-decoration: underline;
+    	color: #c45500;
+}
+.typeAddress{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:flex-start;
+	gap:5px;
+}
+.typeAddress span{
+	font-size:16px;
+}
+.typeAddress a{
+	text-decoration:none;
+	color:#007185;
+}
+.typeAddress a:hover{
+	text-decoration: underline;
+    	color: #c45500;
+}
+
+.addNewAddress{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:5px;
+	margin:10px 0px;
+}
+.addNewAddress span{
+	font-size:24px;
+	color:#dddddd;
+	cursor:pointer;
+}
+
+.addNewAddress a{
+	text-decoration:none;
+	color:#007185;
+}
+.addNewAddress a:hover{
+	text-decoration: underline;
+    	color: #c45500;
+}
+
+.pickUp{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:5px;
+	padding-bottom:5px;	
+	border-bottom: 1px solid #d5d9d9;
+}
+.pickUp p{
+	font-size:18px;
+	color:#0f1111;
+	font-weight:700;
+}
+.useThis{
+	display:flex;
+	align-items:center;
+	padding:10px 25px;
+	background-color:#f0f2f2;
+	margin-left:40px;
+	border:1px solid #d5d9d9;
+    	border-bottom-left-radius: 8px;
+    	border-bottom-right-radius: 8px;
+	font-size:12px;
+}
+
+.useThisAddress{
+	display:flex;
+	align-items:center;
+	padding:10px;	
+	background-color:#ffd814;
+	border-radius:8px;
+	cursor:pointer;
+	
+}
+
+
+.useThisAddress b{
+	font-size:12px;
+	font-weight:700;
+}
+
+.useThisAddress:hover{
+	filter:brightness(90%);
+}
+
+
+
+
+.twoThird{
+	border-bottom:1px solid #D5D9D9;
+	padding-bottom:20px;
+	display:flex;
+	flex-direction:column;
+	margin:15px 0px;
+}
+
+.twoThird h3{
+	color:#565959;
+	font-size:18px;
+}
+
+.twoThirdLast{
+	padding-bottom:35px;
+	border-bottom:2.5px solid #D5D9D9;
+}
+
+.contentLeftLast{
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+}
+
+.contentLeftLast p{
+	font-size:12px;
+	color:#565959;
+	font-weight:100;
+}
+.contentLeftLast  a{
+	text-decoration:none;
+	color:#007185;
+	font-size:12px;
+}
+
+.contentLeftLast  a:hover{
+	text-decoration: underline;
+    	color: #c45500;
+}
+
+.contentRight{
+	display:flex;
+	flex-direction:column;
+	border-top:1px solid #d5d9d9;
+	border-left:1px solid #d5d9d9;
+	border-right:1px solid #d5d9d9;
+    	border-top-left-radius: 8px;
+    	border-top-right-radius: 8px;
+	margin-left:20px;
+	width:288px;
+	border-radius:8px;
+	padding-top:15px;	
+}
+
+.buttonAndText{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	font-size:12px;
+	color:#0f1111;
+	margin:0px 15px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid #d5d9d9;
+}
+.proceedToBuy{
+	
+	width:100%;
+	padding:10px 80px;
+	font-size:13px;
+	background-color:#ffd814;
+	border:none;
+	border-radius:8px;
+	margin-top:5px;
+	cursor:pointer;
+	margin-bottom:10px;
+}
+
+.buttonAndText button:hover{
+	filter:brightness(90%);
+}
+
+
+.textAfterButton{
+	display:flex;
+	flex-direction:column;
+	align-items:center;	
+	justify-content:center;
+	margin:0px 15px;
+	margin-top:5px;
+}
+
+
+.textAfterButton p{
+	font-size:12px;
+	color:#0f1111;
+	font-weight:100;
+}
+
+
+.orderSummery{
+	
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+	margin:0px 15px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid#d5d9d9;
+}
+
+.orderSummery h3{
+	color:#0f1111;
+	font-size:18px;
+}
+.itemsDelivery{
+	display:flex;
+	flex-direction:column;
+	margin-bottom:10px;
+}
+
+.item{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.item p{
+	
+	font-size:12px;
+	color:#0f1111;
+	font-weight:100;
+}
+
+.orderSummeryRed{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-bottom:10px;
+	margin:0px 15px;
+
+}
+
+.orderSummeryRed h3{
+	color:#b12704;
+	font-size:18px;
+	margin-bottom:15px;
+}
+
+
+.contentRightBottom{
+	display:flex;
+	align-items:center;
+	background-color:#f0f2f2;
+	padding:20px 0px;
+	border-top:1px solid #d5d9d9;
+	border-bottom:1px solid #d5d9d9;
+    	border-bottom-left-radius: 8px;
+    	border-bottom-right-radius: 8px;
+}
+
+
+
+
+.contentRightBottom a{
+	text-decoration:none;
+	color:#007185;
+	font-size:12px;
+	padding-left:15px;
+	font-weight:100;
+}
+.contentRightBottom a:hover{
+	text-decoration: underline;
+    	color: #c45500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
