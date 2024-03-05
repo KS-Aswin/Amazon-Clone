@@ -3,13 +3,13 @@
 	<head>
 		<title>Amazon Sign In</title>
 		<link rel="stylesheet" href="./styles/style.css">
-		<link rel="stylesheet" href="./styles/cart.css">
+		<link rel="stylesheet" href="./styles/home.css">
 	</head>
 	<body>
 		<div class="navbar">
 			<div class="upperNav">
 				<div class="logo">
-					<a href="homePage.html"><img src="./assets/amazon.png" alt="logo" class="amazonLogo"></a>
+					<img src="./assets/amazon.png" alt="logo" class="amazonLogo">
 				</div>
 				<div class="location">
 					<span class="material-symbols-outlined">location_on</span>
@@ -51,7 +51,7 @@
 					<p class="orders">& Orders</p>
 				</div>
 				<div class="cart">
-					<span class="material-symbols-outlined cartIcon">shopping_cart</span>
+					<a href="cartPage.html"><span class="material-symbols-outlined cartIcon">shopping_cart</span></a>
 					<p class="orders">Cart</p>
 				</div>
 			</div>
@@ -97,185 +97,289 @@
 				</div>
 			</div>
 		</div>
-		<div class="entireBody">
+		<div class="mainBody">
+			<img src="./assets/homeBg.png" alt="new">
+		</div>
+		<div class="mainBodyContents">
 			<div class="upperBody">
-				<div class="upperLeftBody">
-					<div class="upperLeftBodyTop">
-						<div class="shoppingCart">
-							<div class="shoppingDeselect">
-								<h1>Shopping Cart</h1>
-								<a href="#">Deselect all items</a>
-							</div>
-							<div class="shoppingPrice">
-								<p class="shoppingPriceRight">Price</p>
-							</div>
-						</div>
-						<div class="productPart">
-							<div class="detailShirtPrice">
-								<img src="./assets/checkBox.png" alt="shirt" class="productCheckBox">
-								<img src="./assets/shirt.png" alt="shirt" class="productShirtImg">
-								<div class="aboutShirt">
-									<div class="detailsShirt">
-										<p class="shirtName">Levi's Men's Slim Fit Shirt (32907-0391_Maroon</p>
-										<p class="shirtStock">Only 2 left in stock.</p>
-										<p class="eligibleFor">Eligible for FREE Shipping</p>
-										<img src="./assets/fullFilled.png" alt="shirt" class="fullFilled">
-										<div class="giftShirt">
-											<span class="material-symbols-outlined">check_box_outline_blank</span>
-											<p>This will be a gift <a href="#">Learn more</a>
-										</div>
-										<p class="sizeM"><b>Size:</b> M</p>
-										<p class="sizeM"><b>Colour:</b> Maroon</p>
-										<div class="qtyHeads">
-											<div class="quantityBox">
-												<p class="qty">Qty: 1</p>
-												<span class="material-symbols-outlined">expand_more</span>
-											</div>
-											<div class="quantityHeadings">
-												<a href="#">Delete</a>
-											</div>
-											<div class="quantityHeadings">
-												<a href="#">Save for later</a>
-											</div>
-											<div class="quantityHeadings">
-												<a href="#">See more like this</a>
-											</div>
-											<div class="quantityHeadingsShare">
-												<a href="#">Share</a>
-											</div>
-										</div>
+				<div class="leftRightArrows">
+					<span class="material-symbols-outlined">arrow_back_ios</span>
+					<span class="material-symbols-outlined">arrow_forward_ios</span>
+				</div>
+				<div class="upperBodyContents">
+					<div class="pickWhereLeft">
+						<div class="pickWhereLeftContents">
+							<p><b>Pick up where you left off</b></p>
+							<div class="pickUps">
+								<div class="pickUpsImgs">
+									<div class="pickUpsImgsDetails">
+										<img src="./assets/yellow.png" alt="new">
+										<p>Levi's Mens Shirt</p>
+									</div>
+									<div class="pickUpsImgsDetails">
+										<img src="./assets/orange.png" alt="new">
+										<p>Levi's Men Checke...</p>
+									</div>
+								</div>
+								<div class="pickUpsImgs">
+									<div class="pickUpsImgsDetails">
+										<img src="./assets/cyan.png" alt="new">
+										<p>Levi's Mens Shirt</p>
+									</div>
+									<div class="pickUpsImgsDetails">
+										<img src="./assets/dark.png" alt="new">
+										<p>Levi's Men's Solid</p>
 									</div>
 								</div>
 							</div>
-							<div class="priceOfShirt">
-								<p class="priceShirt"><b>&#8377;999.00</b></p>
-							</div>
-						</div>
-						<div class="priceOfShirt">
-							<p class="subTotalPrice">Subtotal (1 item):<b>&#8377;999.00</b></p>
+							<a href="#">See more</a>
 						</div>
 					</div>
-				</div>
-				<div class="upperLeftBody">
-					<div class="itemsSavedFor">
-						<h2>Your Items</h2>
-						<div class="itemsAgain">
-							<a href="#">No items saved for later</a>
-							<div class="buyItAgain">
-								<p><b>Buy it again</b></p>
-							</div>
-						</div>
-						<div class="noItemBuy">
-							<p>No items to Buy again.</p>
+					<div class="pickWhereLeft">
+						<div class="pickWhereLeftContents">
+							<p><b>Bestselling headphones starts at ₹199</b></p>
+							<img src="./assets/headset.png" alt="new">
+							<a href="#">See more</a>
 						</div>
 					</div>
-				</div>
-				<div class="priceAvailabilityOfText">
-					<p class="priceAvailabilityOf">The price and availability of items at Amazon.in are subject to change. The shopping cart is a temporary place to store a list of your items and reflects each item's most recent price.</p>
-					<p class="priceAvailabilityOf">Do you have a promotional code? We'll ask you to enter your claim code when it's time to pay.</p>
+					<div class="pickWhereLeft">
+						<div class="pickWhereLeftContents pickWhereLeftContentsAccessory">
+							<p><b>Top mobile accessories for your smartphone</b></p>
+							<div class="pickUps topAccessoryDetailsPickUp">
+								<div class="pickUpsImgs topAccessoryDetails">
+									<div class="pickUpsImgsDetails topAccessory">
+										<img src="./assets/pinkHeadset.png" alt="new">
+										<p>Headsets</p>
+									</div>
+									<div class="pickUpsImgsDetails topAccessory">
+										<img src="./assets/usb.png" alt="new">
+										<p>Cables and chargers</p>
+									</div>
+								</div>
+								<div class="pickUpsImgs topAccessoryDetails">
+									<div class="pickUpsImgsDetails topAccessory">
+										<img src="./assets/cover.png" alt="new">
+										<p>Cases and covers</p>
+									</div>
+									<div class="pickUpsImgsDetails topAccessory">
+										<img src="./assets/powerbank.png" alt="new">
+										<p>Powerbanks</p>
+									</div>
+								</div>
+							</div>
+							<a href="#">See more</a>
+						</div>
+					</div>
+					<div class="cashBackPhone">
+						<div class="cashBack">
+							<div class="cashBackImg">
+								<p><b>Cashback up to 20%</b></p>
+								<a href="#">Register now</a>
+							</div>
+							<img src="./assets/headWatch.png" alt="new">
+						</div>
+						<div class="mobilePhone">
+							<img src="./assets/samsung.png" alt="new">
+							<div class="mobileDetails">
+								<p>Samsung Galaxy S24 5G AI Smartphone (Cobalt Violet, 8GB, 256GB Storage)</p>
+								<div class="primes">
+									<p><b>₹79,999.00</b></p>
+									<img src="./assets/prime.png" alt="new">
+								</div>
+								<div class="saveMoney">
+									<div class="save2000">
+										<p>Save ₹2,000</p>
+									</div>
+									<p><b>with coupon</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-
-
-			<div class="entireBodyRight">
-
-
-
-
-				<div class="entireBodyRightContents">
-					<div class="freeDeliver">
-						<img src="./assets/yesIcon.png" alt="yes">
-						<div class="freeDeliverText">
-							<p class="greenText"><b>Your order is eligible for FREE Delivery.</b></p>
-							<p>Select this option at checkout.<a href="#"> Details</a>
-						</div>
-					</div>
-					<p class="subTotalPrice">Subtotal (1 item):<b>&#8377;999.00</b></p>
-					<div class="giftContains">
-						<span class="material-symbols-outlined">check_box_outline_blank</span>
-						<p>This order contains a gift</p>
-					</div>
-					<a href="buyPage.html"><button class="proceedToBuy">Proceed to Buy</button></a>
+			<div class="todaysDeal">
+				<div class="seeAllDeal">
+					<h2>Today's Deals</h2>
+					<a href="deals">See all deals</a>
 				</div>
-
-				<div class="entireBodyRightContents2">
-					<h3>Styling ideas based on your cart</h3>
-					<div class="styleIdeas">
-						<img src="./assets/whiteShirt.png" alt="yes">
-						<div class="ideasProduct">
-							<a href="#">Van Heusen Men</a>
-							<a href="#">Bermuda Shorts</a>
-							<div class="ratingStar">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/emptyStar.png" alt="yes">
-								<a href="#">90</a>
+				<div class="todayDealsMobileDetails">
+					<div class="todayDealsMobile">
+						<div class="dealsMobile"> 
+							<img src="./assets/redmi12.png" alt="new">
+						</div>
+						<div class="percOff">
+							<div class="perc">
+								<p>25% off</p>
 							</div>
-							<p>&#8377;695.00</p>
-							<button>Add to Cart</button>
-
+							<p><b>Limited time deal</b></p>
 						</div>
+						<p class="phName">Redmi 12 5G</p>
 					</div>
-					<div class="styleIdeas">
-						<img src="./assets/watch.png" alt="yes">
-						<div class="ideasProduct">
-							<a href="#">Titan Regalia Analog</a>
-							<a href="#">Silver Dial Men's Watc...</a>
-							<div class="ratingStar">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/halfStar.png" alt="yes">
-								<a href="#">12</a>
+					<div class="todayDealsMobile">
+						<div class="dealsMobile"> 
+							<img src="./assets/narzo.png" alt="new">
+						</div>
+						<div class="percOff">
+							<div class="perc">
+								<p>25% off</p>
 							</div>
-							<p>&#8377;6,682.00</p>
-							<p class="onlyItemsIn">Only 2 left in stock.</p>
-							<button>Add to Cart</button>
-
+							<p><b>Limited time deal</b></p>
 						</div>
+						<p class="phName">Realme Narzo 60 5G</p>
 					</div>
-					<div class="styleIdeas shoeOnly">
-						<img src="./assets/shoe.png" alt="yes" >
-						<div class="ideasProduct">
-							<a href="#">Hush Puppies Mens</a>
-							<a href="#">Shack Lace 1 ESneaker</a>
-							<div class="ratingStar">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/rating.png" alt="yes">
-								<img src="./assets/halfStar.png" alt="yes">
-								<img src="./assets/emptyStar.png" alt="yes">
-								<a href="#">29</a>
+					<div class="todayDealsMobile">
+						<div class="dealsMobile"> 
+							<img src="./assets/narzoX.png" alt="new">
+						</div>
+						<div class="percOff">
+							<div class="perc">
+								<p>23% off</p>
 							</div>
-							<p>&#8377;2,589.00</p>
-							<button>Add to Cart</button>
-
+							<p><b>Limited time deal</b></p>
 						</div>
+						<p class="phName">Realme Narzo 60X 5G</p>
 					</div>
-					<div class="styleIdeas">
-						<img src="./assets/blackShirt.png" alt="yes">
-						<div class="ideasProduct">
-							<a href="#">Reebok Men's Shorts</a>
-							
-							<p>&#8377;695.00</p>
-							<button>Add to Cart</button>
-
+					<div class="todayDealsMobile">
+						<div class="dealsMobile"> 
+							<img src="./assets/redmi13.png" alt="new">
 						</div>
+						<div class="percOff">
+							<div class="perc">
+								<p>Upto 37% off</p>
+							</div>
+							<p><b>Limited time deal</b></p>
+						</div>
+						<p class="phName">Redmi 13 5G</p>
+					</div>
+					<div class="todayDealsMobile">
+						<div class="dealsMobile"> 
+							<img src="./assets/narzoN.png" alt="new">
+						</div>
+						<div class="percOff">
+							<div class="perc">
+								<p>32% off</p>
+							</div>
+							<p><b>Limited time deal</b></p>
+						</div>
+						<p class="phName">Realme Narzo N53</p>
+					</div>
+				</div>
+				<div class="arrowsTwo">
+					<div class="arrowDivLeft">
+						<span class="material-symbols-outlined">arrow_back_ios</span>
+					</div>
+					<div class="arrowDivRight">
+						<span class="material-symbols-outlined">arrow_forward_ios</span>
+					</div>
+				</div>
+			</div>
+			<div class="todaysDealShirt">
+				<div class="seeAllDeal">
+					<h2>Related to items you've viewed</h2>
+					<a href="deals">See more</a>
+				</div>
+				<div class="todayDealsMobileDetails">
+					<img src="./assets/green.png" alt="new">
+					<img src="./assets/red.png" alt="new">
+					<img src="./assets/greenDot.png" alt="new">
+					<img src="./assets/purple.png" alt="new">
+					<img src="./assets/brown.png" alt="new">
+					<img src="./assets/gold.png" alt="new">
+					<img src="./assets/blue.png" alt="new">
+					<img src="./assets/white.png" alt="new">
+				</div>
+			</div>
+			<div class="upperBodyContents">
+				<div class="pickWhereLeft">
+					<div class="pickWhereLeftContents">
+						<p><b>Bestsellers in Men's Indian Clothing</b></p>
+						<div class="pickUps">
+							<div class="pickUpsImgs">
+								<div class="pickUpsImgsDetails">
+									<img src="./assets/lGreen.png" alt="new">
+								</div>
+								<div class="pickUpsImgsDetails">
+									<img src="./assets/dGreen.png" alt="new">
+								</div>
+							</div>
+							<div class="pickUpsImgs">
+								<div class="pickUpsImgsDetails">
+									<img src="./assets/yellow.png" alt="new">
+								</div>
+								<div class="pickUpsImgsDetails">
+									<img src="./assets/blackShirt.png" alt="new">
+								</div>
+							</div>
+						</div>
+						<a href="#">See more</a>
+					</div>
+				</div>
+				<div class="pickWhereLeft">
+					<div class="pickWhereLeftContents">
+						<p><b>Up to 60% off | Car, bike parts & accessories</b></p>
+						<img src="./assets/ev.png" alt="new">
+						<a href="#">See more</a>
+					</div>
+				</div>
+				<div class="pickWhereLeft">
+					<div class="pickWhereLeftContents pickWhereLeftContentsAccessory">
+						<p><b>Top picks | Luggage, watches & more</b></p>
+						<div class="pickUps topAccessoryDetailsPickUp">
+							<div class="pickUpsImgs topAccessoryDetails">
+								<div class="pickUpsImgsDetails topAccessory">
+									<img src="./assets/redBag.png" alt="new">
+									<p>American Tourister</p>
+								</div>
+								<div class="pickUpsImgsDetails topAccessory">
+									<img src="./assets/twoWatch.png" alt="new">
+									<p>Up to 60% off</p>
+								</div>
+							</div>
+							<div class="pickUpsImgs topAccessoryDetails">
+								<div class="pickUpsImgsDetails topAccessory">
+									<img src="./assets/blueBag.png" alt="new">
+									<p>Safari</p>
+								</div>
+								<div class="pickUpsImgsDetails topAccessory">
+									<img src="./assets/neck.png" alt="new">
+									<p>Jewellery</p>
+								</div>
+							</div>
+						</div>
+						<a href="#">See more</a>
+					</div>
+				</div>
+				<div class="pickWhereLeft">
+					<div class="pickWhereLeftContents">
+						<p><b>Up to 60% off | Start your fitness journey</b></p>
+						<img src="./assets/gym.png" alt="new">
+						<a href="#">See more</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		<div class="todaysDealShirt">
+			<div class="seeAllDeal">
+				<h2>More items to consider</h2>
+				<a href="deals">See more</a>
+			</div>
+			<div class="todayDealsMobileDetails">
+				<img src="./assets/blackWatch.png" alt="new">
+				<img src="./assets/goldWatch.png" alt="new">
+				<img src="./assets/watch1.png" alt="new">
+				<img src="./assets/watch2.png" alt="new">
+				<img src="./assets/watch3.png" alt="new">
+				<img src="./assets/watch4.png" alt="new">
+				<img src="./assets/watch5.png" alt="new">
+				<img src="./assets/watch6.png" alt="new">
+			</div>
+		</div>
 		<div class="bottomBody">
 			<div class="firstPart">
 				<div class="cusWho">
-					<h2>Customers who bought items in your Recent History also bought</h2>
+					<h2>Inspired by your browsing history</h2>
 					<div class="pageNum">
-						<p>Page 1 of 4</p>
+						<p>Page 1 of 8</p>
 						<span class="material-symbols-outlined">more_vert</span>
 					</div>
 				</div>
@@ -384,8 +488,6 @@
 					</div>
 				</div>
 			</div>
-
-
 			<div class="secondPart">
 				<div class="histView">
 					<h2>Your browsing history</h2>
@@ -394,37 +496,26 @@
 				<img src="./assets/shirt.png" alt="yes">
 			</div>
 		</div>
-
+		</div>
 		<div class="backToTop">
 			<p>Back to top
 		</div>
 		<div class="footer">
-
 			<div class="footerContents footerContentsLeft">
-
 				<p class="headingFooter "><b>Get to know Us</b></p>
-
 				<p class="aboutFooter">About Us</p>
 				<p class="aboutFooter">Career</p>
 				<p class="aboutFooter">Press Release</p>
 				<p class="aboutFooter">Amazon Science</p>
-
 			</div>
-
 			<div class="footerContents">
-
 				<p class="headingFooter"><b>Connect with Us</b></p>
-
 				<p class="aboutFooter">Facebook</p>
 				<p class="aboutFooter">Twitter</p>
 				<p class="aboutFooter">Instagram</p>
-
 			</div>
-
 			<div class="footerContents">
-
 				<p class="headingFooter"><b>Make Money with Us</b></p>
-
 				<p class="aboutFooter">Sell on Amazon</p>
 				<p class="aboutFooter">Sell under Amazon Accelerator</p>
 				<p class="aboutFooter">Protect and Build Your Brand</p>
@@ -433,23 +524,17 @@
 				<p class="aboutFooter">Fulfilment by Amazon</p>
 				<p class="aboutFooter">Advertise Your Products</p>
 				<p class="aboutFooter">Amazon Pay on Merchants</p>
-
 			</div>
-
 			<div class="footerContents footerContentsRight">
-
 				<p class="headingFooter"><b>Let Us Help You</b></p>
-
 				<p class="aboutFooter">COVID-19 and Amazon</p>
 				<p class="aboutFooter">Your Account</p>
 				<p class="aboutFooter">Returns Centre</p>
 				<p class="aboutFooter">100% Purchase Protection</p>
 				<p class="aboutFooter">Amazon App Download</p>
 				<p class="aboutFooter">Help</p>
-
 			</div>
-
-		</div>	
+		</div>
 		<div class="bottomFooter">
 			<div class="bottomUpFooter">
 				<img src="./assets/amazonFooter.png" alt="yes">
@@ -479,8 +564,6 @@
 					<p>Spain</p>
 					<p>Turkey</p>
 					<p>United Arab Emirates</p>
-					
-
 				</div>
 				<div class="bottomDownFooterContents">
 					<p>United Kingdom</p>
