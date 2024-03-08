@@ -2,187 +2,434 @@
 <html lang="en">
 	<head>
 		<title>Amazon Sign In</title>
-	
-		<link rel="stylesheet" href="./bootstrap/bootstrap.css">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./bootstrap/bootstrap.css">
 		<link rel="stylesheet" href="./styles/style.css">
-		<link rel="stylesheet" href="./styles/category .css">
+		<link rel="stylesheet" href="./styles/category.css">
 	</head>
 	<body>
 		<div class="navbar d-flex flex-column">
-			<div class="upperNav">
-				<div class="logo">
+			<div class="upperNav d-flex align-items-center justify-content-between">
+				<div class="logo d-flex align-items-center">
+					<span class="material-symbols-outlined d-sm-block d-lg-none">menu</span>
 					<img src="./assets/amazon.png" alt="logo" class="amazonLogo">
 				</div>
-				<div class="location">
+				<div class="location d-none d-lg-flex align-items-end">
 					<span class="material-symbols-outlined">location_on</span>
-					<div class="deliverLocation">
+					<div class="deliverLocation d-flex flex-column justify-content-end">
 						<p class="deliver">Deliver to</p>
 						<p class="deliverPoint">Udumbanchola 685619</p>
 					</div>
 				</div>
-				<form>
-					<div class="searchBox">
-						<div class="all">
+				<form class="flex-grow-1">
+					<div class="searchBox d-flex align-items-center d-none d-lg-flex">
+						<div class="all  d-md-flex align-items-center justify-content-between ">
 							<p>Electronics</p>
 							<span class="material-symbols-outlined">arrow_drop_down</span>
 						</div>
-						<div class="searchTextIcon">
+						<div class="searchTextIcon d-flex align-items-center justify-content-between flex-grow-1">
 							<div class="search">
-								<input class="searchText" type="text" id="username" name="username" placeholder="Search Amazon.in">
+								<input class="searchText" type="text" id="user" name="user" placeholder="Search Amazon.in">
 							</div>
-							<div class="searchIcon">
+							<div class="searchIcon d-flex align-items-center justify-content-center">
 								<span class="material-symbols-outlined">search</span>
 							</div>
 						</div>
 					</div>
 				</form>
-				<div class="region">
+				<div class="region d-none d-lg-flex align-items-center">
 					<img src="./assets/india.png" alt="india">
 					<p class="lang">EN</p>
 					<span class="material-symbols-outlined">arrow_drop_down</span>
 				</div>
-				<div class="user">
+				<div class="user d-none d-lg-flex flex-column justify-content-center">
 					<p class="acct">Hello, Aswin</p>
-					<div class="acctList">
+					<div class="acctList d-flex align-items-center">
 						<p class="list">Accounts & List</p>
 						<span class="material-symbols-outlined">arrow_drop_down</span>
 					</div>
 				</div>
-				<div class="returnsOrder">
+				<div class="returnsOrder d-none d-lg-flex flex-column">
 					<p class="returns">Returns</p>
 					<p class="orders">& Orders</p>
 				</div>
-				<div class="cart">
+				<div class="cart d-flex align-items-end">
+					<span class="material-symbols-outlined d-flex d-lg-none mb-1">person</span>
 					<a href="cartPage.html"><span class="material-symbols-outlined cartIcon">shopping_cart</span></a>
-					<p class="orders">Cart</p>
+					<p class="d-none d-lg-flex orders">Cart</p>
 				</div>
 			</div>
-			<div class="lowerNav">
-				<div class="lowerNavHead">
-					<div class="menuAll">
+			<div class="upperNav  px-2 d-sm-block d-lg-none align-items-center justify-content-start">
+				<form class="flex-grow-1 d-block d-lg-none">
+					<div class="searchBox d-flex align-items-center">
+						<div class="all  d-none align-items-center justify-content-between ">
+							<p class="fs-1 !important">Electronics</p>
+							<span class="material-symbols-outlined">arrow_drop_down</span>
+						</div>
+						<div class="searchTextIcon d-flex align-items-center justify-content-between flex-grow-1">
+							<div class="search">
+								<input class="searchText" type="text" id="username" name="username" placeholder="Search Amazon.in">
+							</div>
+							<div class="searchIcon d-flex align-items-center justify-content-center">
+								<span class="material-symbols-outlined">search</span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="upperNav px-2 d-sm-block d-lg-none align-items-center justify-content-start">
+				<div class="location d-flex align-items-end">
+					<span class="material-symbols-outlined">location_on</span>
+					<div class="deliverLocation d-flex justify-content-start">
+						<p class="deliver">Deliver to</p>
+						<p class="deliverPoint">Udumbanchola 685619</p>
+					</div>
+				</div>
+			</div>
+			<div class="lowerNav  d-none d-lg-flex align-items-center justify-content-between">
+				<div class="lowerNavHead  d-flex align-items-center justify-content-between ">
+					<div class="menuAll d-flex align-items-center">
 						<span class="material-symbols-outlined">menu</span>
 						<p>All</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Amazon miniTV</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Keep Shopping for</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Sell</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Amazon Pay</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Today's Deals</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Best Sellers</p>
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings d-flex align-items-center">
 						<p class="head">Buy Again</p>
 					</div>
-					<div class="primeHeading">
-						<div class="prime">
+					<div class="primeHeading  d-flex align-items-center">
+						<div class="prime  d-flex align-items-center">
 							<p class="head">Prime</p>
 						</div>
 						<span class="material-symbols-outlined">arrow_drop_down</span>						
 					</div>
-					<div class="allHeadings">
+					<div class="allHeadings  d-flex align-items-center">
 						<p class="head">Mobiles</p>
 					</div>
 				</div>
-				<div class="newLauches">
+				<div class="newLauches  d-none d-xl-flex align-items-center justify-content-between">
 					<img src="./assets/new.png" alt="new">					
 				</div>
 			</div>
-			<div class="finalNav">
-				<h4>Electronics</h4>
-				<p>Mobiles & Accessories</p>
-				<p>Laptops & Accessories</p>
-				<p>TV & home Entertainment</p>
-				<p>Audio</p>
-				<p>Camera</p>
-				<p>Computer Peripheral</p>
-				<p>Smart Technology</p>
-				<p>Musical Instrument</p>
-				<p>Office & Stationary</p>
-			</div>
 		</div>
-				<div class="backToTop">
-			<p>Back to top
-		</div>
-		<div class="footer">
-			<div class="footerContents footerContentsLeft">
-				<p class="headingFooter "><b>Get to know Us</b></p>
-				<p class="aboutFooter">About Us</p>
-				<p class="aboutFooter">Career</p>
-				<p class="aboutFooter">Press Release</p>
-				<p class="aboutFooter">Amazon Science</p>
+		<div class="bodyPart m-3">
+			<div class="bHeadImg d-flex align-items-center">
+				<img src="./assets/sLiving.png" alt="new" class=" col-12 ">
 			</div>
-			<div class="footerContents">
-				<p class="headingFooter"><b>Connect with Us</b></p>
-				<p class="aboutFooter">Facebook</p>
-				<p class="aboutFooter">Twitter</p>
-				<p class="aboutFooter">Instagram</p>
-			</div>
-			<div class="footerContents">
-				<p class="headingFooter"><b>Make Money with Us</b></p>
-				<p class="aboutFooter">Sell on Amazon</p>
-				<p class="aboutFooter">Sell under Amazon Accelerator</p>
-				<p class="aboutFooter">Protect and Build Your Brand</p>
-				<p class="aboutFooter">Amazon Global Selling</p>
-				<p class="aboutFooter">Become an Affiliate</p>
-				<p class="aboutFooter">Fulfilment by Amazon</p>
-				<p class="aboutFooter">Advertise Your Products</p>
-				<p class="aboutFooter">Amazon Pay on Merchants</p>
-			</div>
-			<div class="footerContents footerContentsRight">
-				<p class="headingFooter"><b>Let Us Help You</b></p>
-				<p class="aboutFooter">COVID-19 and Amazon</p>
-				<p class="aboutFooter">Your Account</p>
-				<p class="aboutFooter">Returns Centre</p>
-				<p class="aboutFooter">100% Purchase Protection</p>
-				<p class="aboutFooter">Amazon App Download</p>
-				<p class="aboutFooter">Help</p>
-			</div>
-		</div>
-		<div class="bottomFooter">
-			<div class="bottomUpFooter">
-				<img src="./assets/amazonFooter.png" alt="yes">
-				<div class="langSelect">
-					<span class="material-symbols-outlined">language</span>
-					<p class="aboutFooter">English</p>
-					<div class="arrows">
-						<span class="material-symbols-outlined rotateUp">arrow_drop_down</span>
-						<span class="material-symbols-outlined">arrow_drop_down</span>
+			<div class="bodyLeftRight d-flex justify-content-between py-3">
+				<div class="leftBody d-none d-lg-flex flex-column col-lg-2">
+					<p class="my-1"><b>Category</b></p>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Electronics</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Home & Kitchen</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Tools & Home Improvement</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Indrustrial & Scientific</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Sports, Fitness & Outdoors</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Computer & Accessories</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Health & Personal Care</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Baby</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Clothing & Accessories</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Musical Instruments</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Video Games</p>
+					</div>
+					<div class="category d-flex align-items-center my-1">
+						<span class="material-symbols-outlined mt-1">arrow_back_ios</span>
+						<p>Watches</p>
+					</div>
+				</div>
+				<div class="rightBody col-12 col-lg-10 ps-lg-3">
+					<img src="./assets/alexa.png" alt="new" class=" col-12">
+					<img src="./assets/cyanText.png" alt="new" class="col-12 my-3">
+					<div class="imgSec col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start my-3 overflow-hidden">
+						<img src="./assets/h1.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h2.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h3.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h4.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+					</div>
+					<div class="imgSec col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start my-3">
+						<img src="./assets/h5.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h6.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h7.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h8.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+					</div>
+					<img src="./assets/cyanText2.png" alt="new" class="col-12 my-3">
+					<div class="imgSec col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start my-3">
+						<img src="./assets/h9.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h10.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h11.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h12.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+					</div>
+					<img src="./assets/cyanText3.png" alt="new" class="col-12 my-3">
+					<div class="imgSec col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start my-3">
+						<img src="./assets/h13.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h14.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h15.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h16.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+					</div>
+					<div class="imgSec col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start my-3">
+						<img src="./assets/h17.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h18.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h19.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+						<img src="./assets/h20.png" alt="new" class="col-8 flex-md-grow-1 col-md-2">
+					</div>
+					<div class="imgSec2 d-flex align-items-center justify-content-center my-5">
+						<img src="./assets/h21.png" alt="new" class="col-8 flex-md-grow-0 col-md-7">
+					</div>
+					<div class="oneOf d-none d-sm-flex py-3 px-5 mx-3">
+						<p>1-12 of 23 results for <span><b>All Categories</b></span></p>
+					</div>
+					<div class="products d-flex flex-column flex-md-row align-items-center  m-3">
+						<div class="eachProducts d-flex flex-column col-8 col-md-4">
+							<div class="proDet d-flex align-items-center justify-content-center col-12 flex-md-grow-1 col-md-6 my-3 ps-0 ps-md-4">
+								<img src="./assets/h22.png" alt="new" class="col-12 flex-md-grow-1 col-md-3 my-3 ">
+							</div>
+							<p class="col-12 col-md-8">Blackt Electrotech (BT31C): 360 Degree PIR Motion Sensor with Light Sensor, Energy Saving Motion Detector Switch with 18 Months Warranty (Ceiling</p>
+							<div class="ratingP d-flex align-items-center">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/emptyStar.png" alt="new" class="">
+								<span class="material-symbols-outlined">expand_more</span>
+								<a href ="num">2,737</a>
+							</div>
+							<p class="liteText">200+ bought in past month</p>
+							<p class="ruAmt"><span class="rupeee">₹</span>596 <span class="liteText"> M.R.P:</span><span class="lThrough">₹800</span><span class="offf"> (26% off)</span></p>
+							<p class="getIt">Get it by <b>Friday 15 March</b></p>
+							<p class="getIt">FREE Delivery by Amazon</p>
+						</div>
+						<div class="eachProducts d-flex flex-column col-8 col-md-4">
+							<div class="proDet d-flex align-items-center justify-content-center col-12 flex-md-grow-1 col-md-6 my-3 ps-0 ps-md-4">
+								<img src="./assets/h23.png" alt="new" class="col-12 flex-md-grow-1 col-md-3 my-3 ">
+							</div>
+							<p class="col-12 col-md-8">Smart Plug High Low Voltage Cutout/Protector Rated @ 16Amp with Surge Protection Upto 4000 Volts.</p>
+							<div class="ratingP d-flex align-items-center">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/emptyStar.png" alt="new" class="">
+								<span class="material-symbols-outlined">expand_more</span>
+								<a href ="num">1,611</a>
+							</div>
+							<p class="liteText">100+ bought in past month</p>
+							<p class="ruAmt"><span class="rupeee">₹</span>1,309 <span class="liteText"> M.R.P:</span><span class="lThrough">₹2,199</span><span class="offf"> (40% off)</span></p>
+							<p class="getIt">Get it  <b>Monday 11 March -Thursday 14</b></p>
+							<p class="getIt"><b>March</b></p>
+						</div>
+						<div class="eachProducts d-flex flex-column col-8 col-md-4">
+							<div class="proDet d-flex align-items-center justify-content-center col-12 flex-md-grow-1 col-md-6 my-3 ps-0 ps-md-4">
+								<img src="./assets/h24.png" alt="new" class="col-12 flex-md-grow-1 col-md-3 my-3 ">
+							</div>
+							<p class="col-12 col-md-8">HTC Android Vive - Virtual Reality System</p>
+							<div class="ratingP d-flex align-items-center">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/halfStar.png" alt="new" class="">
+								<img src="./assets/emptyStar.png" alt="new" class="">
+								<span class="material-symbols-outlined">expand_more</span>
+								<a href ="num">65</a>
+							</div>
+							<a href="as"><b>StreamVR</b></a>
+							<p class="ruAmt"><span class="rupeee">₹</span>77,990 <span class="liteText"> M.R.P:</span><span class="lThrough">₹1,27,990</span><span class="offf"> (39% off)</span></p>
+						</div>
+					</div>
+					<div class="products d-flex flex-column flex-md-row align-items-center  m-3">
+						<div class="eachProducts d-flex flex-column col-8 col-md-4">
+							<div class="proDet d-flex align-items-center justify-content-center col-12 flex-md-grow-1 col-md-6 my-3 ps-0 ps-md-4">
+								<img src="./assets/h25.png" alt="new" class="col-12 flex-md-grow-1 col-md-3 my-3 ">
+							</div>
+							<p class="col-12 col-md-8">Blackt Electrotech BT31W PIR Sensor motion sensor Energy Saving Motion Detector Wall Mounted</p>
+							<div class="ratingP d-flex align-items-center">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/emptyStar.png" alt="new" class="">
+								<span class="material-symbols-outlined">expand_more</span>
+								<a href ="num">1,288</a>
+							</div>
+							<p class="liteText">100+ bought in past month</p>
+							<p class="ruAmt"><span class="rupeee">₹</span>568 <span class="liteText"> M.R.P:</span><span class="lThrough">₹800</span><span class="offf"> (29% off)</span></p>
+							<p class="getIt">Get it by <b>Friday 15 March</b></p>
+							<p class="getIt">FREE Delivery by Amazon</p>
+						</div>
+						<div class="eachProducts d-flex flex-column col-8 col-md-4">
+							<div class="proDet d-flex align-items-center justify-content-center col-12 flex-md-grow-1 col-md-6 my-3 ps-0 ps-md-4">
+								<img src="./assets/h26.png" alt="new" class="col-12 flex-md-grow-1 col-md-3 my-3 ">
+							</div>
+							<p class="col-12 col-md-8">Procus ONE Virtual Reality Headset 40MM Lenses -For IOS and Android – (Black)</p>
+							<div class="ratingP d-flex align-items-center">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/halfStar.png" alt="new" class="">
+								<img src="./assets/emptyStar.png" alt="new" class="">
+								<span class="material-symbols-outlined">expand_more</span>
+								<a href ="num">4,372</a>
+							</div>
+							<p class="liteText">50+ bought in past month</p>
+							<p class="ruAmt"><span class="rupeee">₹</span>1,999 <span class="liteText"> M.R.P:</span><span class="lThrough">₹2,999</span><span class="offf"> (33% off)</span></p>
+							<p class="getIt">Get it by <b>Friday 15 March</b></p>
+							<p class="getIt">FREE Delivery by Amazon</p>
+						</div>
+						<div class="eachProducts d-flex flex-column col-8 col-md-4">
+							<div class="proDet d-flex align-items-center justify-content-center col-12 flex-md-grow-1 col-md-6 my-3 ps-0 ps-md-4">
+								<img src="./assets/h27.png" alt="new" class="col-12 flex-md-grow-1 col-md-3 my-3 ">
+							</div>
+							<p class="col-12 col-md-8">Fitbit Surge Ultimate Fitness Super Watch, Large (Black)</p>
+							<div class="ratingP d-flex align-items-center">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/rating.png" alt="new" class="">
+								<img src="./assets/halfStar.png" alt="new" class="">
+								<img src="./assets/emptyStar.png" alt="new" class="">
+								<span class="material-symbols-outlined">expand_more</span>
+								<a href ="num">4,433</a>
+							</div>
+							<p class="liteText">No featured offers available</p>
+							<p class="ruAmt"><span class="rupeee">₹</span>596 <span class="liteText"> M.R.P:</span><span class="lThrough">₹800</span><span class="offf"> (26% off)</span></p>
+							<p class="getIt">₹38,381<a href="re">(1 new offer)</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="bottomDownFooter">
-				<div class="bottomDownFooterContents">
-					<p>Austrailia</p>
-					<p>Brazil</p>
-					<p>Canada</p>
-					<p>China</p>
-					<p>France</p>
-					<p>Germany</p>
-					<p>Italy</p>
-					<p>Japan</p>
-					<p>Mexico</p>
-					<p>Netherland</p>
-					<p>Poland</p>
-					<p>Singapore</p>
-					<p>Spain</p>
-					<p>Turkey</p>
-					<p>United Arab Emirates</p>
+			<div class="backToTop d-flex align-items-center justify-content-center col-12">
+				<p>Back to top</p>
+			</div>
+			<div class="footer d-flex flex-wrap align-items-start justify-content-around px-5 ">
+				<div class="footerContents footerContentsLeft d-flex flex-column col-sm-6 col-md-2 mb-3">
+					<p class="headingFooter "><b>Get to know Us</b></p>
+					<p class="aboutFooter">About Us</p>
+					<p class="aboutFooter">Career</p>
+					<p class="aboutFooter">Press Release</p>
+					<p class="aboutFooter">Amazon Science</p>
 				</div>
-				<div class="bottomDownFooterContents">
-					<p>United Kingdom</p>
-					<p>United States</p>
+				<div class="footerContents d-flex flex-column col-sm-6 col-md-2 mb-3 ">
+					<p class="headingFooter"><b>Connect with Us</b></p>
+					<p class="aboutFooter">Facebook</p>
+					<p class="aboutFooter">Twitter</p>
+					<p class="aboutFooter">Instagram</p>
 				</div>
+				<div class="footerContents d-flex flex-column col-sm-6 col-md-2 mb-3 ">
+					<p class="headingFooter"><b>Make Money with Us</b></p>
+					<p class="aboutFooter">Sell on Amazon</p>
+					<p class="aboutFooter">Sell under Amazon Accelerator</p>
+					<p class="aboutFooter">Protect and Build Your Brand</p>
+					<p class="aboutFooter">Amazon Global Selling</p>
+					<p class="aboutFooter">Become an Affiliate</p>
+					<p class="aboutFooter">Fulfilment by Amazon</p>
+					<p class="aboutFooter">Advertise Your Products</p>
+					<p class="aboutFooter">Amazon Pay on Merchants</p>
+				</div>
+				<div class="footerContents footerContentsRight d-flex flex-column col-sm-6 col-md-2 mb-3 ">
+					<p class="headingFooter"><b>Let Us Help You</b></p>
+					<p class="aboutFooter">COVID-19 and Amazon</p>
+					<p class="aboutFooter">Your Account</p>
+					<p class="aboutFooter">Returns Centre</p>
+					<p class="aboutFooter">100% Purchase Protection</p>
+					<p class="aboutFooter">Amazon App Download</p>
+					<p class="aboutFooter">Help</p>
+				</div>
+			</div>
+			<div class="bottomFooter d-none d-sm-flex flex-column align-items-center justify-content-center">
+				<div class="bottomUpFooter d-none d-sm-flex align-items-center justify-content-center">
+					<img src="./assets/amazonFooter.png" alt="yes" class="d-none d-md-flex">
+					<div class="langSelect d-flex align-items-center justify-content-between">
+						<span class="material-symbols-outlined">language</span>
+						<p class="aboutFooter">English</p>
+						<div class="arrows d-flex flex-column align-items-center">
+							<span class="material-symbols-outlined rotateUp">arrow_drop_down</span>
+							<span class="material-symbols-outlined">arrow_drop_down</span>
+						</div>
+					</div>
+				</div>
+				<div class="bottomDownFooter d-flex  flex-column align-items-center justify-content-center">
+					<div class="bottomDownFooterContents d-flex flex-wrap align-items-center justify-content-center">
+						<p>Austrailia</p>
+						<p>Brazil</p>
+						<p>Canada</p>
+						<p>China</p>
+						<p>France</p>
+						<p>Germany</p>
+						<p>Italy</p>
+						<p>Japan</p>
+						<p>Mexico</p>
+						<p>Netherland</p>
+						<p>Poland</p>
+						<p>Singapore</p>
+						<p>Spain</p>
+						<p>Turkey</p>
+						<p>United Arab Emirates</p>
+					</div>
+					<div class="bottomDownFooterContents">
+						<p>United Kingdom</p>
+						<p>United States</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottomFooter d-flex d-sm-none flex-column align-items-center justify-content-center">
+				<div class="bottomUpFooter d-flex align-items-center justify-content-center">
+					<img src="./assets/amazonFooter.png" alt="yes" class="d-none d-md-flex">
+					<div class="langSelect d-flex align-items-center justify-content-between">
+						<span class="material-symbols-outlined">language</span>
+						<p class="aboutFooter">English</p>
+						<div class="arrows d-flex flex-column align-items-center">
+							<span class="material-symbols-outlined rotateUp">arrow_drop_down</span>
+							<span class="material-symbols-outlined">arrow_drop_down</span>
+						</div>
+					</div>
+				</div>
+				<p>Switch Accounts</p>
+				<p>Sign Out</p>
 			</div>
 		</div>
 	</body>

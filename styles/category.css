@@ -21,25 +21,21 @@ body {
 }
 
 
-
 .upperNav {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
 	gap: 2px;
 	background-color: #131921;
 	color: #fff;
 	padding: 0px 12px;
-	height: 60px !important;
 }
 
 .logo {
-	width: 128px;
-	display: flex;
-	align-items: center;
 	padding: 7px 5px 6px 5px;
 	border: 1px solid transparent;
 	cursor: pointer;
+}
+
+.logo span {
+	font-size: 40px;
 }
 
 .logo:hover {
@@ -47,8 +43,6 @@ body {
 }
 
 .location {
-	display: flex;
-	align-items: flex-end;
 	border: 1px solid transparent;
 	padding: 12px 10px 10px 11px;
 	margin-right: 5px;
@@ -63,12 +57,6 @@ body {
 	font-size: 18px;
 }
 
-.deliverLocation {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
 .deliver {
 	font-size: 11px;
 	color: #cccccc;
@@ -80,17 +68,13 @@ body {
 }
 
 .searchBox {
-	display: flex;
-	align-items: center;
 	margin-right: 15px;
 	background-color: #ffffff;
 	border-radius: 8px;
 }
 
 .all {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+
 	padding: 10px;
 	padding-right: 0px;
 	background-color: #e6e6e6;
@@ -104,16 +88,9 @@ body {
 	color: #000;
 }
 
-.searchTextIcon {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
 .search {
 	font-size: 15px;
 	color: #0f1111;
-	width: 508.05px;
 
 }
 
@@ -126,9 +103,7 @@ body {
 
 .searchIcon {
 	background-color: #febd69;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	padding: 10px;
 	border-radius: 0px 8px 8px 0px;
 	color: initial;
@@ -140,8 +115,6 @@ body {
 }
 
 .region {
-	display: flex;
-	align-items: center;
 	border: 1px solid transparent;
 	padding: 13px 5px;
 	cursor: pointer;
@@ -169,9 +142,6 @@ body {
 }
 
 .user {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	border: 1px solid transparent;
 	padding: 7px 5px;
 	cursor: pointer;
@@ -179,11 +149,6 @@ body {
 
 .user:hover {
 	border-color: white;
-}
-
-.acctList {
-	display: flex;
-	align-items: center;
 }
 
 .acctList span {
@@ -201,8 +166,6 @@ body {
 }
 
 .returnsOrder {
-	display: flex;
-	flex-direction: column;
 	border: 1px solid transparent;
 	padding: 10px 5px;
 	cursor: pointer;
@@ -222,8 +185,6 @@ body {
 }
 
 .cart {
-	display: flex;
-	align-items: flex-end;
 	border: 1px solid transparent;
 	padding: 9px 5px;
 	cursor: pointer;
@@ -248,24 +209,14 @@ body {
 
 
 .lowerNav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	background-color: #232f3e;
 	color: #ffffff;
 	padding-left: 10px;
 	padding-right: 2px;
 }
 
-.lowerNavHead {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
 
 .menuAll {
-	display: flex;
-	align-items: center;
 	gap: 5px;
 	padding: 5px;
 	border: 1px solid transparent;
@@ -286,8 +237,6 @@ body {
 }
 
 .allHeadings {
-	display: flex;
-	align-items: center;
 	padding: 9px;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -299,8 +248,6 @@ body {
 }
 
 .primeHeading {
-	display: flex;
-	align-items: center;
 	padding: 6px 9px;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -316,58 +263,23 @@ body {
 	border-color: white;
 }
 
-.prime {
-	display: flex;
-	align-items: center;
-}
-
 .newLauches {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	padding: 0px 9px;
 	border: 1px solid transparent;
 	cursor: pointer;
 	font-size: 14px;
 }
 
+.newLauches img {
+	width: 284px;
+	height: auto;
+}
+
 .newLauches:hover {
 	border-color: white;
 }
 
-
-.finalNav {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 16px 20px;
-	border-bottom: 1px solid #d5d9d9;
-	background-color: #ffffff;
-	color: #0f1111;
-	cursor: pointer;
-}
-
-.finalNav p {
-	font-size: 12px;
-	color: #333333;
-	border-bottom: 2px solid transparent;
-}
-
-.finalNav h4 {
-	font-size: 13px;
-	margin-bottom: 2px;
-}
-
-.finalNav p:hover {
-	border-bottom: 2px solid #e47911;
-}
-
-
 .backToTop {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
 	padding: 15px 0px;
 	background-color: #37475a;
 	cursor: pointer;
@@ -379,14 +291,97 @@ body {
 	background-color: #495d74;
 }
 
+.leftBody {
+	border-right: 1px solid #bbbfbf;
+	height: 328px;
+}
+
+.category p {
+	font-size: 13px;
+	color: #0f1111;
+}
+
+.category span {
+	font-size: 14px;
+	align-items: center;
+	position: relative;
+	bottom: 3px;
+}
+
+
+.imgSec {
+	gap: 5px;
+}
+
+.oneOf {
+	border: 1px solid #bbbfbf;
+	border-radius: 8px;
+}
+
+.oneOf span {
+	color: #c45500;
+}
+
+.oneOf p {
+	font-size: 14px;
+	color: #0f1111;
+}
+
+.eachProducts {
+	font-size: 16px;
+	color: #0f1111;
+	gap: 5px;
+}
+
+.ratingP {
+	gap: 3px;
+}
+
+.ratingP img {
+	width: 20px;
+}
+
+.ratingP span {
+	font-size: 10px;
+}
+
+.liteText {
+	font-size: 14px;
+	color: #565959;
+}
+
+.ruAmt {
+	font-size: 28px;
+	color: #0f1111;
+}
+
+.rupeee {
+	position: relative;
+	bottom: 10px;
+	font-size: 13px;
+	color: #0f1111;
+}
+
+.lThrough {
+	font-size: 13px;
+	color: #565959;
+	text-decoration: line-through;
+}
+
+.offf {
+	font-size: 14px;
+	color: #0f1111;
+}
+
+.getIt {
+	font-size: 14px;
+	color: #0f1111;
+}
+
 
 .footer {
-	width: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-start;
 	padding: 50px 0px;
-	gap: 120px;
+	flex-warp: wrap;
 	color: #cccccc;
 	background-color: #232f3e;
 	border-bottom: 1px solid #D5D9D9;
@@ -398,9 +393,6 @@ body {
 	margin-bottom: 15px;
 }
 
-.footerContentsLeft {
-	margin-left: 200px;
-}
 
 .aboutFooter {
 	color: #dddddd;
@@ -414,10 +406,6 @@ body {
 }
 
 .bottomFooter {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	background-color: #232f3e;
 	padding: 40px;
 	gap: 20px;
@@ -428,19 +416,18 @@ body {
 	margin-top: 10px;
 }
 
+.bottomFooter p {
+	color: #ffffff;
+	font-size: 15px;
+}
+
 .bottomUpFooter {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 80px;
 	padding: 20px;
 	width: 100%;
 }
 
 .langSelect {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	gap: 5px;
 	background: transperant;
 	border: 1px solid #D5D9D9;
@@ -459,12 +446,10 @@ body {
 	color: #cccccc;
 }
 
-
-.arrows {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.footerContents {
+	width: 250px;
 }
+
 
 .arrows span {
 	font-size: 15px;
@@ -477,12 +462,8 @@ body {
 }
 
 .bottomDownFooter {
-	display: flex;
-	flex-direction: column;
 	font-size: 12px;
 	color: #dddddd;
-	align-items: center;
-	justify-content: center;
 	gap: 10px;
 }
 
@@ -491,9 +472,6 @@ body {
 }
 
 .bottomDownFooterContents {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 10px;
 }
 
