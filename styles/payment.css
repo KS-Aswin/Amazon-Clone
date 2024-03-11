@@ -447,8 +447,9 @@
 }
 
 .proceedToBuy {
-
-	width: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	padding: 8px 35px;
 	font-size: 13px;
 	background-color: #ffd814;
@@ -463,6 +464,10 @@
 	filter: brightness(90%);
 }
 
+.buttonAndText a{
+	text-decoration:none;
+	color:#0f1111;
+}
 
 .textAfterButton {
 	display: flex;
@@ -589,6 +594,7 @@
 	font-size: 12px;
 	color: #0f1111;
 	font-weight: 100;
+	margin-left:15px;
 }
 
 .orderSummeryFinal p {

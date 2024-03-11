@@ -262,6 +262,7 @@
 }
 
 .contentRight {
+	height:fit-content;
 	display: flex;
 	flex-direction: column;
 	border-top: 1px solid #d5d9d9;
@@ -290,7 +291,6 @@
 
 .proceedToBuy {
 
-	width: 100%;
 	padding: 10px 80px;
 	font-size: 13px;
 	background-color: #ffd814;
@@ -301,12 +301,17 @@
 	margin-bottom: 10px;
 }
 
-.buttonAndText button:hover {
+.buttonAndText a{
+	text-decoration:none;
+}
+
+.buttonAndText a:hover {
 	filter: brightness(90%);
 }
 
 
 .textAfterButton {
+	width:288px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
