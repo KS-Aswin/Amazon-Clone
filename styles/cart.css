@@ -608,6 +608,11 @@ body {
 	padding: 20px;
 }
 
+.entireBodyRightContents a{
+	text-decoration:none;
+	color:#0f1111;
+}
+
 .freeDeliver {
 	display: flex;
 	align-items: flex-start;
@@ -668,7 +673,9 @@ body {
 }
 
 .proceedToBuy {
-	width: 100%;
+	display:flex;
+	align-items-center;
+	justify-content:center;
 	padding: 10px;
 	font-size: 13px;
 	background-color: #ffd814;

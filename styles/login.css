@@ -165,8 +165,15 @@ a:hover {
 .create {
 	width: 100%;
 }
+.create a{
+	text-decoration:none;
+	color:#0f1111;
+}
 
 .createButton {
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	color: #0F1111;
 	cursor: pointer;
 	background-color: transparent;
@@ -175,7 +182,6 @@ a:hover {
 	border-radius: 8px;
 	font-size: 12px;
 	margin-bottom: 9px;
-	width: 100%;
 }
 
 .hrLine {
